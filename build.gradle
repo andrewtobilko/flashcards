@@ -1,0 +1,21 @@
+group 'com.github.tobilko'
+version '1.0'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def junitVersion = '4.11',
+        springVersion = '4.2.3.RELEASE'
+
+    testCompile "junit:junit:${junitVersion}"
+    compile "org.springframework:spring-core:${springVersion}",
+            "org.springframework:spring-context:${springVersion}"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
