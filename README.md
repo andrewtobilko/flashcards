@@ -6,7 +6,7 @@ The project 'Flashcards' will help you to learn a foreign language quickly and e
 
 Technologies in use
 ---
-1. Spring (Core, AOP, MVC)
-2. Hibernate (ORM, Validation)
-3. Logback *as a logging system*
-4. Gradle *with an embedded Tomcat container*
+* Spring (Core, AOP, MVC)
+* Hibernate (ORM, Validation)
+* Logback *as a logging system*
+* Gradle *with an embedded Tomcat container*
