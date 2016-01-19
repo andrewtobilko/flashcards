@@ -11,9 +11,9 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-public class DispatcherInitializer implements WebApplicationInitializer {
+public class ApplicationInitializer implements WebApplicationInitializer {
 
-    private final static Logger logger = LoggerFactory.getLogger(DispatcherInitializer.class);
+    private final static Logger logger = LoggerFactory.getLogger(ApplicationInitializer.class);
     private final static String NAME = "dispatcher";
     private final static String PACKAGE = "com.github.tobilko.configuration";
 

@@ -24,7 +24,13 @@ dependencies {
 
             'com.google.apis:google-api-services-translate:v2-rev41-1.21.0',
             "javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1",
-            "ch.qos.logback:logback-classic:${logbackVersion}"
+            "ch.qos.logback:logback-classic:${logbackVersion}",
+
+            'org.hibernate:hibernate-validator:5.2.2.Final',
+            'org.hibernate:hibernate-entitymanager:5.0.7.Final',
+
+            'org.thymeleaf:thymeleaf-spring4:2.1.4.RELEASE'
+
 
     providedCompile "javax.servlet:javax.servlet-api:3.0.1"
 

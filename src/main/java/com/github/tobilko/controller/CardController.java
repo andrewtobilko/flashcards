@@ -1,18 +1,15 @@
 package com.github.tobilko.controller;
 
+import org.hibernate.annotations.common.util.impl.LoggerFactory;
+import org.jboss.logging.Logger;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@RestController
-public class CardController {
+@Controller
+@RequestMapping("/cards")
+public class CardController extends WebMvcConfigurerAdapter {
 
-    @RequestMapping("/hello")
-    public ModelAndView hello() {
-        System.out.println(getClass().getName());
-        String key = "AIzaSyBWVJ3mB7V93bGMP5ozS6R59zOC0qTY6BQ";
-
-        return new ModelAndView("index", "message", "Hello world!");
-    }
+    private static final Logger logger = LoggerFactory.logger(CardController.class);
 
 }
