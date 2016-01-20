@@ -5,7 +5,7 @@ import org.hibernate.validator.constraints.Range;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-public abstract class Card {
+abstract class Card {
 
     @Min(0)
     private Long id;
@@ -23,6 +23,7 @@ public abstract class Card {
     private String translate;
         public String getTranslate() { return translate; }
         public void setTranslate(String t) { translate = t; }
+
 
     public Card(Long id) { setId(id); }
 

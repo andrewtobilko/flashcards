@@ -12,4 +12,6 @@ public class CardController extends WebMvcConfigurerAdapter {
 
     private static final Logger logger = LoggerFactory.logger(CardController.class);
 
+
+
 }
